@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Nexus-RPC.iml" filepath="$PROJECT_DIR$/.idea/Nexus-RPC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Nexus-Api/Nexus-RPC.Nexus-Api.iml" filepath="$PROJECT_DIR$/.idea/modules/Nexus-Api/Nexus-RPC.Nexus-Api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Nexus-Api/Nexus-RPC.Nexus-Api.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Nexus-Api/Nexus-RPC.Nexus-Api.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Nexus-Api/Nexus-RPC.Nexus-Api.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Nexus-Api/Nexus-RPC.Nexus-Api.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Nexus-Client/Nexus-RPC.Nexus-Client.iml" filepath="$PROJECT_DIR$/.idea/modules/Nexus-Client/Nexus-RPC.Nexus-Client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Nexus-Client/Nexus-RPC.Nexus-Client.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Nexus-Client/Nexus-RPC.Nexus-Client.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Nexus-Client/Nexus-RPC.Nexus-Client.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Nexus-Client/Nexus-RPC.Nexus-Client.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Nexus-Core/Nexus-RPC.Nexus-Core.iml" filepath="$PROJECT_DIR$/.idea/modules/Nexus-Core/Nexus-RPC.Nexus-Core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Nexus-Core/Nexus-RPC.Nexus-Core.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Nexus-Core/Nexus-RPC.Nexus-Core.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Nexus-Core/Nexus-RPC.Nexus-Core.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Nexus-Core/Nexus-RPC.Nexus-Core.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Nexus-Server/Nexus-RPC.Nexus-Server.iml" filepath="$PROJECT_DIR$/.idea/modules/Nexus-Server/Nexus-RPC.Nexus-Server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Nexus-Server/Nexus-RPC.Nexus-Server.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Nexus-Server/Nexus-RPC.Nexus-Server.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Nexus-Server/Nexus-RPC.Nexus-Server.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Nexus-Server/Nexus-RPC.Nexus-Server.test.iml" />
+    </modules>
+  </component>
+</project>

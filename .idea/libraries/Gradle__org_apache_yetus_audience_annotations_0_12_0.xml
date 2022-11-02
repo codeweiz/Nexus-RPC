@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.apache.yetus:audience-annotations:0.12.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.yetus/audience-annotations/0.12.0/e0efa60318229590103e31c69ebdaae56d903644/audience-annotations-0.12.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.yetus/audience-annotations/0.12.0/bd1956b421da92ae8aef1a86af342d2de562d441/audience-annotations-0.12.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

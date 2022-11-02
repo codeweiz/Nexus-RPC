@@ -1,0 +1,1 @@
+loadBalance=cn.microboat.loadbalance.loadbalancer.RandomLoadBalance

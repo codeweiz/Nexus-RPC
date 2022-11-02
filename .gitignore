@@ -1,0 +1,10 @@
+# Project exclude paths
+/.gradle/
+/Nexus-Api/build/
+/Nexus-Api/build/classes/java/main/
+/Nexus-Client/build/
+/Nexus-Client/build/classes/java/main/
+/Nexus-Core/build/
+/Nexus-Core/build/classes/java/main/
+/Nexus-Server/build/
+/Nexus-Server/build/classes/java/main/

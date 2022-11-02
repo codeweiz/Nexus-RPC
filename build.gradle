@@ -1,0 +1,115 @@
+buildscript {
+    repositories {
+        maven {
+            url 'https://maven.aliyun.com/repository/public'
+        }
+    }
+
+    // spring-boot-gradle-plugin 插件
+    // 管理 org.springframework.boot 和 io.spring.dependency-management 版本号
+    dependencies {
+        classpath 'org.springframework.boot:spring-boot-gradle-plugin:2.7.4'
+    }
+}
+
+// 配置所有模块
+allprojects {
+    group 'cn.microboat'
+    version '1.0-SNAPSHOT'
+
+    // 都使用这个仓库
+    repositories {
+        maven {
+            url 'https://maven.aliyun.com/repository/public'
+        }
+    }
+}
+
+// 从 config.gradle 文件中导入配置
+apply from: 'config.gradle'
+
+// 配置所有子模块
+subprojects {
+    // 都使用以下插件
+    apply plugin: 'java'
+    apply plugin: 'java-library'
+    apply plugin: 'org.springframework.boot'
+    apply plugin: 'io.spring.dependency-management'
+
+    // 依赖引入声明，管理依赖的版本号
+    dependencyManagement {
+        dependencies {
+            for (depJar in rootProject.ext.dependencies) {
+                dependency depJar.value
+            }
+        }
+        imports {
+            // spring-cloud 依赖
+            mavenBom 'org.springframework.cloud:spring-cloud-dependencies:2021.0.4'
+
+            // spring-cloud-alibaba 依赖
+            mavenBom 'com.alibaba.cloud:spring-cloud-alibaba-dependencies:2021.1'
+        }
+    }
+}
+
+// 给模块 Nexus-Core 配置依赖
+project(':Nexus-Core') {
+    dependencies {
+        // netty
+        api 'io.netty:netty-all'
+        // curator zookeeper
+        api 'org.apache.curator:curator-framework'
+        api 'org.apache.curator:curator-recipes'
+        // kryo
+        api 'com.esotericsoftware:kryo'
+        // protostuff
+        api 'io.protostuff:protostuff-core'
+        api 'io.protostuff:protostuff-runtime'
+        // hessian
+        api 'com.caucho:hessian'
+        // spring context support
+        api 'org.springframework:spring-context-support'
+        // hutool 工具类
+        api 'cn.hutool:hutool-all'
+        // guava 工具类
+        api 'com.google.guava:guava'
+        // gson
+        api 'com.google.code.gson:gson'
+        // lombok 插件
+        api 'org.projectlombok:lombok'
+        annotationProcessor 'org.projectlombok:lombok'
+        // slf4j 日志
+        api 'org.slf4j:slf4j-api'
+        api 'ch.qos.logback:logback-classic'
+        // fastjson
+        api 'com.alibaba.fastjson2:fastjson2'
+    }
+}
+
+// 给模块 Nexus-Server 配置依赖
+project(':Nexus-Server') {
+    sourceSets.main.resources.srcDirs = ["src/main/java", "src/main/resources"]
+    dependencies {
+        implementation project(':Nexus-Core')
+        annotationProcessor 'org.projectlombok:lombok'
+        implementation project(':Nexus-Api')
+    }
+}
+
+// 给模块 Nexus-Client 配置依赖
+project(':Nexus-Client') {
+    sourceSets.main.resources.srcDirs = ["src/main/java", "src/main/resources"]
+    dependencies {
+        implementation project(':Nexus-Core')
+        annotationProcessor 'org.projectlombok:lombok'
+        implementation project(':Nexus-Api')
+    }
+}
+
+// 给模块 Nexus-Api 配置依赖
+project(':Nexus-Api') {
+    dependencies {
+    }
+}
+

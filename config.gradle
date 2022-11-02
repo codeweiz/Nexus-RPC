@@ -1,0 +1,31 @@
+ext {
+    version = [
+            "nettyVersion"     : "4.1.84.Final",
+            "curatorVersion"   : "5.4.0",
+            "kryoVersion"      : "5.3.0",
+            "protostuffVersion": "1.8.0",
+            "hessianVersion"   : "4.0.66",
+            "guavaVersion"     : "31.1-jre",
+            "hutoolVersion"    : "5.8.8",
+            "lombokVersion"    : "1.18.24",
+            "slf4jApiVersion"  : "1.7.36",
+            "logbackVersion"   : "1.2.11",
+            "fastjsonVersion"  : "2.0.15",
+    ]
+
+    dependencies = [
+            "netty"             : "io.netty:netty-all:${version.nettyVersion}",
+            "curator-framework" : "org.apache.curator:curator-framework:${version.curatorVersion}",
+            "curator-recipes"   : "org.apache.curator:curator-recipes:${version.curatorVersion}",
+            "kryo"              : "com.esotericsoftware:kryo:${version.kryoVersion}",
+            "protostuff-core"   : "io.protostuff:protostuff-core:${version.protostuffVersion}",
+            "protostuff-runtime": "io.protostuff:protostuff-runtime:${version.protostuffVersion}",
+            "hessian"           : "com.caucho:hessian:${version.hessianVersion}",
+            "guava"             : "com.google.guava:guava:${version.guavaVersion}",
+            "hutool"            : "cn.hutool:hutool-all:${version.hutoolVersion}",
+            "lombok"            : "org.projectlombok:lombok:${version.lombokVersion}",
+            "slf4j"             : "org.slf4j:slf4j-api:${version.slf4jApiVersion}",
+            "logback"           : "ch.qos.logback:logback-classic:${version.logbackVersion}",
+            "fastJson"          : "com.alibaba.fastjson2:fastjson2:${version.fastjsonVersion}",
+    ]
+}

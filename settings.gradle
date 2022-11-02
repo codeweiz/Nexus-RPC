@@ -1,0 +1,9 @@
+// 根项目名称
+rootProject.name = 'Nexus-RPC'
+
+// 核心包
+include 'Nexus-Core'
+include 'Nexus-Server'
+include 'Nexus-Client'
+include 'Nexus-Api'
+
