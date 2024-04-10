@@ -22,13 +22,13 @@ public class PropertiesFileUtils {
      * 读取配置文件
      */
     public static Properties readPropertiesFile(String fileName) {
-        URL url = Thread.currentThread().getContextClassLoader().getResource("");
+        URL url = Thread.currentThread().getContextClassLoader().getResource(fileName);
         String rpcConfigPath = "";
-        if (url != null) {
+/*        if (url != null) {
             rpcConfigPath = url.getPath() + fileName;
-        }
+        }*/
         Properties properties = null;
-        try (InputStreamReader inputStreamReader = new InputStreamReader(Files.newInputStream(Paths.get(rpcConfigPath)), StandardCharsets.UTF_8)) {
+        try (InputStreamReader inputStreamReader = new InputStreamReader(Files.newInputStream(Paths.get(url.getPath())), StandardCharsets.UTF_8)) {
             properties = new Properties();
             properties.load(inputStreamReader);
         } catch (IOException e) {
